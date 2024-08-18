@@ -320,6 +320,144 @@
     line-height: 1.6;
 }
 
+
+/* Styling For FAQ's */
+/* Custom CSS */
+.accordion-item {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion-content.hidden {
+    max-height: 0;
+  }
+  
+  .accordion-content.visible {
+    max-height: 500px; /* Adjust as needed */
+  }
+  
+
+/* Styling for Task Portal */
+.task-portal {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .task-portal-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .image-container {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    width: 100%; /* Ensure the image takes up full width */
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .text-content {
+    flex: 1 1 100%; /* Ensure full width */
+    margin-bottom: 20px;
+  }
+  
+  .text-content h1,
+  .text-content h3 {
+    margin: 10px 0;
+  }
+  
+  .text-content p {
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: 1fr; /* Start with one column on small screens */
+    gap: 20px;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%; /* Ensure the feature takes full width */
+  }
+  
+  .feature img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .feature-text {
+    flex-grow: 1;
+    width: 100%; /* Ensure the text takes up full width */
+  }
+  
+  .feature-text h4,
+  .feature-text p {
+    margin: 0; /* Remove default margin */
+  }
+  
+  @media (min-width: 768px) {
+    .task-portal-content {
+      flex-direction: row;
+      justify-content: space-between; /* Space between image and text */
+      text-align: left;
+    }
+  
+    .image-container {
+      flex: 1 1 40%; /* Image takes 40% width on larger screens */
+    }
+  
+    .text-content {
+      flex: 1 1 60%; /* Text content takes 60% width */
+    }
+  
+    .features {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .features {
+      grid-template-columns: repeat(4, 1fr); /* Four columns on larger screens */
+    }
+  }
+  
+
 @media (max-width: 768px) {
     .task-portal-content {
         flex-direction: column;
