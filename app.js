@@ -7,6 +7,7 @@ document.getElementById('mobile-menu-button').addEventListener('click', function
     }
   });
 
+  
 
   document.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', () => {
