@@ -1,0 +1,44 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Styling For FAQ's */
+/* Custom CSS */
+.accordion-item {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion-content.hidden {
+    max-height: 0;
+  }
+  
+  .accordion-content.visible {
+    max-height: 500px; /* Adjust as needed */
+  }
+  
